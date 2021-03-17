@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'hirakakupro_w3';
+  src: url(assets/font/hirakakupro-w3.otf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hirakakupro_w6';
+  src: url(assets/font/hirakakupro-w6.otf);
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  font-family: "Yu Gothic", YuGothic, 'hirakakupro_w3', 'hirakakupro_w6', sans-serif;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+.container_1 {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.container_2 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.w-100 {
+  width: 100%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
