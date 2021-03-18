@@ -1,20 +1,8 @@
-@font-face{
-    font-family: 'hirakakupro_w3';
-    src: url(assets/font/hirakakupro-w3.otf);
-    font-style: normal;
-}
-
-@font-face{
-    font-family: 'hirakakupro_w6';
-    src: url(assets/font/hirakakupro-w6.otf);
-    font-style: normal;
-}
-
 *{
 	margin: 0;
 	padding: 0;
 	color: #333333;
-    font-family: "Yu Gothic", YuGothic, 'hirakakupro_w3', 'hirakakupro_w6', sans-serif;
+    font-family: "Yu Gothic", YuGothic, sans-serif;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -29,16 +17,688 @@ $color4: #cc0033;
 $color5: #777777;
 
 .container_1{
-    width: 1600px;
+    width: 100%;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
 .container_2{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+
+    @media only screen and (max-width: 1200px) {
+        padding: 0 15px;
+    }
 }
 
 .w-100{
     width: 100%;
-    margin: 0 auto;
 }
+
+// ---------------------------------------
+// HEADER CSS STYLE
+// ---------------------------------------
+
+header{
+    .container_1{
+        .header_flex{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            border-bottom: 1px solid;
+            .row_1{
+                width: 69%;
+                
+                @media only screen and (max-width: 1400px) {
+                    width: 60%;
+                }
+
+                @media only screen and (max-width: 1050px) {
+                    width: 55%;
+                }
+
+                @media only screen and (max-width: 900px) {
+                    width: 80%;
+                    
+                }
+
+                p{
+                    font-family: 'hirakakupro_w6';
+                    font-size: 24px;
+                    padding: 0 0 0 40px;
+
+                    @media only screen and (max-width: 1050px) {
+                        padding: 0 0 0 10px;
+                        font-size: 20px;
+                    }
+
+                    @media only screen and (max-width: 500px) {
+                        padding: 0 0 0 10px;
+                        font-size: 4vw;
+                    }
+                }
+            }
+            .row_2{
+                width: 31%;
+
+                @media only screen and (max-width: 1400px) {
+                    width: 40%;
+                }
+
+                @media only screen and (max-width: 1050px) {
+                    width: 45%;
+                }
+
+                @media only screen and (max-width: 900px) {
+                    width: 0;
+                    display: none;
+                }
+                
+                .head_contct_flex{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    .row{
+                        width: 50%;
+
+                        &:first-child{
+                            a{
+                                width: 100%;
+                                display: block;
+                                text-decoration: none;
+                                text-align: center;
+                                background: #e8ba00;
+                                height: 70px;
+                                line-height: 70px;
+                                align-items: center;
+                                color: $color2;
+                                font-family: 'hirakakupro_w6';
+                                font-size: 16px;
+                            }
+                        }
+                        &:last-child{
+                            a{
+                                width: 100%;
+                                display: block;
+                                text-decoration: none;
+                                text-align: center;
+                                background-color: #cc0033;
+                                height: 70px;
+                                line-height: 70px;
+                                color: $color2;
+                                font-family: 'hirakakupro_w6';
+                                font-size: 16px;
+
+                                i{
+                                    color: $color2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .row_3{
+                width: 100%;
+
+                @media only screen and (max-width: 900px) {
+                    width: 20%;
+                    text-align: right;
+                    padding: 0 20px 0 0;
+                }
+
+                .nav_menu_sp{
+                    display: none;
+                    font-size: 20px;
+                    width: 40px;
+                    background-color: transparent;
+                    border: 2px solid $color1;
+                    border-radius: 5px;
+
+                    &:hover{
+                        background-color: #cc0033;
+                        border: 2px solid #cc0033;
+                        i{
+                            color: $color2;
+                        }
+                    }
+
+                    i{
+                        color: $color1;
+                    }
+
+                    @media only screen and (max-width: 900px) {
+                        display: inline-block;
+                    }
+                }
+
+                .navbar{
+                    padding: 0 60px 0 60px;
+                    // border-top: 1px solid #eeeeee;
+                    // border-bottom: 1px solid #eeeeee;
+                    .navbar_nav{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: space-around;
+                        list-style: none;
+
+                        @media only screen and (max-width: 900px) {
+                            // flex-direction: column;
+                            display: none;
+                            position: absolute;
+                            z-index: 500;
+                            left: 0;
+                            top: 70px;
+                            background-color: #cc0033;
+                            width: 100%;
+                            text-align: left;
+                        }
+
+                        &__openmenu{
+                            display: block;
+                        }
+
+                        .nav_item{
+                            position: relative;
+
+                            &:hover {
+                                .navbar_item_drop_down{
+                                    display: block;
+                                }
+                                .nav_link{
+                                    color: #cc0033;
+                                    background-color: $color2;
+                                }
+                            }
+
+                            &:nth-child(9){
+                                .navbar_item_drop_down{
+                                    left: 2px;
+
+                                    @media only screen and (max-width: 900px) {
+                                        left: 0;
+                                    }
+                                }
+                            }
+
+                            @media only screen and (max-width: 1200px) {
+                                &:nth-child(n+5){
+                                    display: none;
+                                }
+                            }
+
+                            @media only screen and (max-width: 900px) {
+                                &:nth-child(n+5){
+                                    display: block;
+                                }
+                            }
+                            
+
+                            .nav_link{
+                                display: block;
+                                text-decoration: none;
+                                font-family: 'hirakakupro_w3';
+                                font-size: 14px;
+                                height: 60px;
+                                line-height: 60px;
+
+                                @media only screen and (max-width: 900px) {
+                                    padding: 0;
+                                    height: auto;
+                                    line-height: 100%;
+                                    padding: 15px 0 15px 15px;
+                                    color: $color2;
+
+                                    &:hover{
+                                        background: $color2;
+                                    }
+                                }
+                            }
+                            
+                            .navbar_item_drop_down{
+                                display: none;
+                                background-color: #cc0033;
+                                list-style: none;
+                                min-width: 120px;
+                                position: absolute;
+                                z-index: 200;
+                                left: -35px;
+                                margin-top: -10px;
+                                padding: 10px 0;
+
+                                @media only screen and (max-width: 900px) {
+                                    position: relative;
+                                    z-index: 0;
+                                    width: 100%;
+                                    left: 0;
+                                    margin-top: 0;
+                                    padding: 0;
+                                }
+
+                                .navbar_drop_down_item{
+                                    text-align: center;
+
+                                    @media only screen and (max-width: 900px) {
+                                        text-align: left;
+                                    }
+                                    
+                                    .navbar_drop_down_link{
+                                        display: block;
+                                        text-decoration: none;
+                                        color: $color2;
+                                        font-size: 14px;
+                                        font-family: 'hirakakupro_w3';
+                                        padding: 6px 0;
+
+                                        @media only screen and (max-width: 900px) {
+                                            padding: 6px 0 6px 40px;
+                                        }
+
+                                        &:hover{
+                                            background-color: #FFFFFF;
+                                            transition: all 450ms;
+                                            color: $color1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .drop_d{
+                            display: none;
+                            position: relative;
+                            
+                            @media only screen and (max-width: 1200px) {
+                                display: block;
+                            }
+
+                            .drop_d_btn{
+                                background-color: transparent;
+                                border: 0;
+                                outline: transparent;
+                                font-size: 18px;
+                                cursor: pointer;
+
+                                @media only screen and (max-width: 900px) {
+                                    display: none;
+                                }
+                            }
+
+                            .d_n_tabpc{
+                                display: none;
+                                position: absolute;
+                                min-width: 200px;
+                                right: 0;
+                                margin-top: 10px;
+                                background-color: #cc0033;
+                                
+                                &__open_drp{
+                                    display: block;
+                                }
+
+                                .navbar_nav{
+                                    flex-direction: column;
+                                    padding: 10px 0;
+                                    .nav_item{
+                                        position: relative;
+                                        width: 100%;
+                                        text-align: center;
+                                        .nav_link{
+                                            display: block;
+                                            width: 100%;
+                                            height: auto;
+                                            line-height: 100%;
+                                            padding: 15px 0;
+                                            color: $color2;
+
+                                            &:hover{
+                                                background-color: $color2;
+                                                color: $color1;
+                                            }
+                                        }
+
+                                        @media only screen and (max-width: 1200px) {
+                                            &:nth-child(n+5){
+                                                display: block;
+                                            }
+                                        }
+
+                                        .navbar_item_drop_down{
+                                            left: -120px;
+                                            top: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ---------------------------------------
+// HEADER CSS STYLE
+// ---------------------------------------
+
+
+// ---------------------------------------
+// FOOTER CSS STYLE
+// ---------------------------------------
+footer{
+    .w_100{
+        .container_2{
+            .navbar{
+                margin: 60px 0 0 0;
+                .navbar_nav{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    list-style: none;
+                    
+                    .nav_item{
+                        .nav_link{
+                            text-decoration: none;
+                            font-family: 'hirakakupro_w3';
+                            font-size: 14px;
+                        }
+
+                        @media only screen and (max-width: 1000px) {
+                            flex-basis: 25%;
+                            margin-bottom: 10px;
+                        }
+
+                        @media only screen and (max-width: 768px) {
+                            flex-basis: 33%;
+                            margin-bottom: 10px;
+                        }
+                        @media only screen and (max-width: 600px) {
+                            flex-basis: 50%;
+                            margin-bottom: 10px;
+                        }
+
+
+                        &:nth-child(3){
+                            .navbar_drop_down_link{
+                                color: $color5;
+                            }
+                        }
+                        &:nth-child(8){
+                            .navbar_drop_down_link{
+                                color: $color5;
+                            }
+                        }
+
+                        .navbar_item_drop_down{
+                            list-style: none;
+                            .navbar_drop_down_item{
+                                .navbar_drop_down_link{
+                                    text-decoration: none;
+                                    font-family: 'hirakakupro_w3';
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .w_100{
+                .footer_head{
+                    margin-top: 50px;
+                    font-size: 20px;
+                    font-family: 'hirakakupro_w6';
+                    text-align: center;
+
+                    @media only screen and (max-width: 420px) {
+                        font-size: 16px;
+                    }
+                }
+                .footer_details{
+                    margin-top: 30px;
+                    font-size: 14px;
+                    font-family: 'hirakakupro_w3';
+                    text-align: center;
+                    line-height: 24px;
+                }
+                .footer_social{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    justify-content: center;
+                    margin-top: 27px;
+
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        margin: 0 10px;
+
+                        @media only screen and (max-width: 420px) {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright_cont{
+        background-color: #cc0033;
+        padding: 15px 0;
+        margin-top: 40px;
+        .footer_copyright{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            span{
+                color: $color2;
+                font-family: 'Yu Gothic', sans-serif;
+                font-size: 12px;
+                font-weight: 500;               
+            }
+        }
+    }
+}
+// ---------------------------------------
+// FOOTER CSS STYLE
+// ---------------------------------------
+
+
+
+// ---------------------------------------
+// INDEX SECTION 1 CSS STYLE
+// ---------------------------------------
+.sect_1{
+    background-color: $color2;
+    .w_100{
+        .container_1{
+            img{
+                width: 100%;
+                margin-bottom: 60px;
+            }
+        }
+    }
+    .sect_details{
+        margin-bottom: 60px;
+        @media only screen and (max-width: 1200px){
+            padding: 0 15px;
+        }
+        .container_2{
+            border: 1px solid #cc0033;
+            padding: 30px 40px;
+
+            @media only screen and (max-width: 1000px){
+                padding: 30px 20px;
+            }
+
+            p:first-child{
+                font-family: 'hirakakupro_w6';
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            p:last-child{
+                font-family: 'hirakakupro_w3';
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.sect_2{
+    background-color: $color2;
+    .w_100{
+        .container_2{
+            .sect_2_head{
+                font-family: 'hirakakupro_w6';
+                font-size: 36px;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            .sect_2_post_cont{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                .p_row{
+                    width: 50%;
+                    margin-bottom: 30px;
+
+                    &:nth-child(2n+2){
+                        padding-left: 20px;
+
+                        @media only screen and (max-width: 900px) {
+                            padding-left: 0;
+                        }
+                    }
+
+                    @media only screen and (max-width: 900px) {
+                        width: 100%;
+                    }
+
+                    .w_100{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .row{
+                            
+                            &:first-child{
+                                width: 33%;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                            &:last-child{
+                                width: 67%;
+                                padding: 0 40px 0 20px;
+                                @media only screen and (max-width: 768px) {
+                                    padding: 0 0 0 10px;
+                                }
+
+                                p{
+                                    &:first-child{
+                                        font-family: 'hirakakupro_w3';
+                                        font-size: 14px;
+                                        margin-bottom: 17px;
+                                        text-align: left;
+                                        color: $color3;
+
+                                        @media only screen and (max-width: 768px) {
+                                            margin-bottom: 5px;
+                                        }
+
+                                        @media only screen and (max-width: 500px) {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                    &:last-child{
+                                        font-family: 'hirakakupro_w3';
+                                        font-size: 16px;
+                                        text-align: left;
+                                        color: $color3;
+                                        line-height: 28px;
+                                        
+                                        @media only screen and (max-width: 500px) {
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sect_2_seemore_cont{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                margin-bottom: 100px;
+                .sect_2_btn_seemore{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 300px;
+                    height: 50px;
+                    border: 1px solid #cc0033;
+                    text-decoration: none;
+                    font-family: 'hirakakupro_w6';
+                    font-size: 16px;
+                    color: #cc0033;
+                    padding: 0 15px 0 110px;
+                    i{
+                        font-size: 16px;
+                        color: #cc0033;
+                        
+                    }
+
+                    &:hover{
+                        background-color: #cc0033;
+                        color: $color2;
+                        transition: all 450ms;
+                        i{
+                            background-color: #cc0033;
+                            color: $color2;
+                            // transition: all 250ms;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sect_3{
+    background-color: $color2;
+    .w_100{
+        .container_1{
+            .sect_3_head{
+                font-family: 'hirakakupro_w6';
+                font-size: 36px;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+        }
+    }
+}
+// ---------------------------------------
+// INDEX SECTION 1 CSS STYLE
+// ---------------------------------------
