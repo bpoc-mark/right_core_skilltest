@@ -8,6 +8,7 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
+    text-decoration: none;
 }
 
 $color1: #333333;
@@ -20,12 +21,14 @@ $color5: #777777;
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
+    position: relative;
 }
 
 .container_2{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 
     @media only screen and (max-width: 1200px) {
         padding: 0 15px;
@@ -520,7 +523,46 @@ footer{
 // ---------------------------------------
 // INDEX SECTION 1 CSS STYLE
 // ---------------------------------------
-.sect_1{
+.sect_btn_cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    .sect_btn{
+        display: block;
+        position: relative;
+        width: 300px;
+        height: 50px;
+        line-height: 50px;
+        border: 1px solid #cc0033;
+        text-decoration: none;
+        font-family: 'hirakakupro_w6';
+        font-size: 16px;
+        color: #cc0033;
+        text-align: center;
+        i{
+            font-size: 16px;
+            color: #cc0033;
+            position: absolute;
+            right: 13px;
+            top: 17px;
+        }
+
+        &:hover{
+            background-color: #cc0033;
+            color: $color2;
+            transition: all 450ms;
+            i{
+                background-color: #cc0033;
+                color: $color2;
+                // transition: all 250ms;
+            }
+        }
+    }
+}
+
+.i_sect_1{
     background-color: $color2;
     .w_100{
         .container_1{
@@ -556,7 +598,7 @@ footer{
     }
 }
 
-.sect_2{
+.i_sect_2{
     background-color: $color2;
     .w_100{
         .container_2{
@@ -686,15 +728,434 @@ footer{
     }
 }
 
-.sect_3{
+.i_sect_3{
     background-color: $color2;
     .w_100{
-        .container_1{
+        .w_100{
             .sect_3_head{
                 font-family: 'hirakakupro_w6';
                 font-size: 36px;
                 margin-bottom: 40px;
                 text-align: center;
+            }
+            .owl-carousel.owl-drag .owl-item.active.center {
+                transform: scale(1.15);
+                opacity: 1;
+                transition: all 450ms;
+            } 
+            .owl-carousel.owl-drag .owl-item {
+                transform: scale(.8);
+                opacity: .6;
+                transition: all 450ms;
+                /* height: 400px; */
+            }
+            .owl-nav{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 47%;
+                display: flex;
+                justify-content: space-between;
+
+                @media only screen and (max-width: 999px) {
+                    display: none;
+                }
+            }
+            .owl-nav .owl-prev i{
+                font-size: 30px;
+            }
+            .owl-nav .owl-next i{
+                font-size: 30px;
+            }
+            .sect_btn_cont{
+                .sect_btn{
+                    height: 60px;
+                    line-height: 60px;
+                    i{
+                        top: 21px;
+                        right: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.i_sect_4{
+    background-color: $color2;
+    .w_100{
+        .container_2{
+            .sect_4_head{
+                font-family: 'hirakakupro_w6';
+                font-size: 36px;
+                margin-bottom: 40px;
+                text-align: center;
+
+                br{
+                    display: none;
+
+                    @media only screen and (max-width: 425px) {
+                        display: block;
+                    }
+                }
+            }
+
+            .table_cont{
+                width: 100%;
+                position: relative;
+
+                @media only screen and (max-width: 900px) {
+                    display: flex;
+                    flex: none;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    height: auto;
+                    overflow: hidden;
+                    width: 100%;
+                    max-width: 100%;
+                    margin: 0 auto;
+                }
+
+                .sect_4_tr_first_row{
+                    display: none;
+                    position: relative;
+                    width: 100%;
+                    text-align: left;
+                    border-collapse: collapse;
+                    table-layout: fixed;
+                    margin-bottom: 20px;
+
+                    @media only screen and (max-width: 900px) {
+                        display: block;
+                        width: 300px;
+                    }
+
+                    li{
+                        list-style: none;
+
+                        &:first-child{
+                            border: 1px solid #cccccc;
+                            padding: 10px 15px;
+                            background-color: #e8ba00;
+                            color: #e8ba00;
+                            font-family: 'hirakakupro_w6';
+                            font-size: 16px;
+                        }
+
+                        &:nth-child(n+2){
+                            border-bottom: 1px solid #cccccc;
+                            border-left: 1px solid #cccccc;
+                            border-right: 1px solid #cccccc;
+                            padding: 10px 15px;
+                            background-color: $color2;
+                            font-family: 'hirakakupro_w3';
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .inner_table{
+                    width: 100%;
+                    overflow-x: auto;
+                    overflow-y: hidden;
+                    .price_table{
+                        position: relative;
+                        width: 100%;
+                        text-align: left;
+                        border-collapse: collapse;
+                        table-layout: fixed;
+                        margin-bottom: 20px;
+                        tr{
+                            position: relative;
+                            th{
+                                border: 1px solid #cccccc;
+                                padding: 10px 15px;
+                                background-color: #e8ba00;
+                                color: $color2;
+                                font-family: 'hirakakupro_w6';
+                                font-size: 16px;
+
+                                @media only screen and (max-width: 900px) {
+                                    width: 200px;
+                                    border-left: none;
+                                    &:first-child{
+                                        display: none;
+                                    }
+                                }
+                            }
+                            td{
+                                border: 1px solid #cccccc;
+                                padding: 10px 15px;
+                                background-color: $color2;
+                                font-family: 'hirakakupro_w3';
+                                font-size: 16px;
+
+                                @media only screen and (max-width: 900px) {
+                                    width: 200px;
+                                    border-left: none;
+                                    &:first-child{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .sect_4_bns_hr{
+                .sect_4_bns_hr_head{
+                    font-family: 'hirakakupro_w6';
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+                .sect_4_cst_20{
+                    width: 240px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+
+                    span{
+                        font-family: 'hirakakupro_w3';
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.i_sect_5{
+    background-color: $color2;
+    .w_100{
+        .container_2{
+            .sect_5_head{
+                font-family: 'hirakakupro_w6';
+                font-size: 36px;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+
+            .sect_5_voice_cont{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: space-between;
+                .row{
+                    width: 48.83%;
+                    margin-bottom: 30px;
+
+                    @media only screen and (max-width: 950px) {
+                        width: 100%;
+                    }
+
+                    .w_100{
+                        position: relative;
+                        .img_bg_cont{
+                            position: relative;
+                            img{
+                                width: 100%;
+                                position: relative;
+                                z-index: 1;
+                            }
+                            .img_overlay{
+                                background-color: rgba(255, 255, 255, 0);
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                z-index: 2;
+                                top: 0;
+                                left: 0;
+                            }
+                        }
+                        .voice_text{
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            z-index: 3;
+                            top: 0;
+                            left: 0;
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 47px;
+
+                            @media only screen and (max-width: 1050px) {
+                                padding: 0 27px;
+                            }
+
+                            @media only screen and (max-width: 768px) {
+                                padding: 0 27px;
+                            }
+
+                            @media only screen and (max-width: 425px) {
+                                padding: 0 10px;
+                            }
+
+                            @media only screen and (max-width: 375px) {
+                                padding: 0 5px 0 10px;
+                            }
+
+                            .voice_text_head{
+                                font-family: 'hirakakupro_w6';
+                                font-size: 24px;
+                                margin-bottom: 30px;
+                                text-align: center;
+
+                                @media only screen and (max-width: 768px) {
+                                    margin-bottom: 15px;
+                                }
+
+                                @media only screen and (max-width: 425px) {
+                                    margin-bottom: 10px;
+                                    font-size: 20px;
+                                }
+
+                                @media only screen and (max-width: 375px) {
+                                    margin-bottom: 5px;
+                                    font-size: 20px;
+                                }
+                            }
+                            .voice_text_des{
+                                font-family: 'hirakakupro_w3';
+                                font-size: 16px;
+                                text-align: left;
+                                line-height: 27px;
+
+                                @media only screen and (max-width: 425px) {
+                                    line-height: 23px;
+                                    font-size: 14px;
+                                }
+
+                                @media only screen and (max-width: 375px) {
+                                    line-height: 20px;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sect_btn_cont{
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.i_sect_6{
+    background-color: $color2;
+    .w_100{
+        .container_2{
+            background-color: #f0f0f0;
+            padding: 80px 120px;
+
+            @media only screen and (max-width: 1110px) {
+                padding: 80px 50px;
+            }
+
+            @media only screen and (max-width: 970px) {
+                padding: 80px 50px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                padding: 80px 15px;
+            }
+
+            .sect_6_head{
+                font-family: 'hirakakupro_w6';
+                font-size: 36px;
+                margin-bottom: 40px;
+                text-align: left;
+            }
+            .new_list_cont{
+                a{
+                    text-decoration: none;
+                    .new_list_item{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin-bottom: 20px;
+                        .row{
+                            @media only screen and (max-width: 970px) {
+                                &:last-child{
+                                    width: 100%;
+                                    margin-top: 10px;
+                                }
+                            }
+                            
+                            .new_item_category{
+                                font-family: 'hirakakupro_w3';
+                                font-size: 16px;
+                                background-color: #cc0033;
+                                color: $color2;
+                                padding: 5px 12px;
+                                margin-right: 10px;
+                            }
+                            .new_item_date{
+                                font-family: 'hirakakupro_w3';
+                                font-size: 16px;
+                                margin-right: 20px;
+                            }
+                            .new_item_title{
+                                font-family: 'hirakakupro_w3';
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+            .sect_btn_cont{
+                margin-bottom: 0;
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+.contact_section{
+    .w_100{
+        .contact_sect_cont{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 100px;
+            .row{
+                width: 50%;
+                text-align: center;
+
+                @media only screen and (max-width: 600px) {
+                    width: 100%;
+                }
+                .cont_inquiry{
+                    display: block;
+                    height: 140px;
+                    line-height: 140px;
+                    width: 100%;
+                    background-color: #e8ba00;
+                    font-family: 'hirakakupro_w6';
+                    font-size: 24px;
+                    color: $color2;
+                }
+
+                .cont_download{
+                    display: block;
+                    height: 140px;
+                    line-height: 140px;
+                    width: 100%;
+                    background-color: #cc0033;
+                    font-family: 'hirakakupro_w6';
+                    font-size: 24px;
+                    color: $color2;
+                }
             }
         }
     }
