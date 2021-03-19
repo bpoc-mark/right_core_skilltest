@@ -33,6 +33,7 @@
 
 .w-100 {
   width: 100%;
+  position: relative;
 }
 
 header .container_1 .header_flex {
@@ -41,7 +42,6 @@ header .container_1 .header_flex {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 1px solid;
 }
 
 header .container_1 .header_flex .row_1 {
@@ -567,6 +567,13 @@ footer .copyright_cont .footer_copyright span {
 .sect_btn_cont .sect_btn:hover i {
   background-color: #cc0033;
   color: #FFFFFF;
+}
+
+.sect_head {
+  font-family: 'hirakakupro_w6';
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .i_sect_1 {
@@ -1226,5 +1233,114 @@ footer .copyright_cont .footer_copyright span {
   font-family: 'hirakakupro_w6';
   font-size: 24px;
   color: #FFFFFF;
+}
+
+.jumbo_sect .w_100 .jumbo_cont {
+  height: 250px;
+  background-image: url(/assets/img/access/jumbo_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 83%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 425px) {
+  .jumbo_sect .w_100 .jumbo_cont {
+    height: 150px;
+    margin-bottom: 50px;
+  }
+}
+
+.jumbo_sect .w_100 .jumbo_cont .jumbo_txt_head {
+  color: #FFFFFF;
+  font-family: 'hirakakupro_w6';
+  font-size: 30px;
+  text-shadow: 0px 5px 10px rgba(206, 89, 55, 0.2);
+}
+
+.a_sect_1 .w_100 .container_2 .w_100 .mapouter {
+  position: relative;
+  text-align: right;
+  height: 300px;
+  width: 100%;
+}
+
+.a_sect_1 .w_100 .container_2 .w_100 .mapouter .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 300px;
+  width: 100%;
+}
+
+.a_sect_1 .w_100 .container_2 .w_100 .access_details {
+  margin-top: 30px;
+  margin-bottom: 95px;
+}
+
+.a_sect_1 .w_100 .container_2 .w_100 .access_details .access_address {
+  font-family: 'hirakakupro_w6';
+  font-size: 18px;
+}
+
+.a_sect_1 .w_100 .container_2 .w_100 .access_details .access_address_sub {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-family: 'hirakakupro_w3';
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.a_sect_1 .w_100 .container_2 .w_100 .access_details .access_subway_direction {
+  font-family: 'hirakakupro_w6';
+  font-size: 18px;
+}
+
+.a_sect_1 .w_100 .container_2 .w_100 .access_details .access_subway_direction_sub {
+  margin-bottom: 40px;
+  font-family: 'hirakakupro_w3';
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.a_sect_1 .w_100 .container_2 .w_100 .access_details .access_nagoya_direction {
+  font-family: 'hirakakupro_w6';
+  font-size: 18px;
+}
+
+.a_sect_1 .w_100 .container_2 .w_100 .access_details .access_nagoya_direction_sub {
+  margin-bottom: 40px;
+  font-family: 'hirakakupro_w3';
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.a_sect_2 .w_100 .container_2 .access_img_cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.a_sect_2 .w_100 .container_2 .access_img_cont .row {
+  width: 32.5%;
+}
+
+.a_sect_2 .w_100 .container_2 .access_img_cont .row img {
+  width: 100%;
+}
+
+.a_sect_2 .w_100 .container_2 .access_park_cont {
+  margin-top: 28px;
+}
+
+.a_sect_2 .w_100 .container_2 .access_park_cont p {
+  font-family: 'hirakakupro_w3';
+  font-size: 16px;
+  line-height: 27px;
 }
 /*# sourceMappingURL=style.css.map */
