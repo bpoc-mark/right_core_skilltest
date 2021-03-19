@@ -573,10 +573,33 @@ footer{
 .i_sect_1{
     background-color: $color2;
     .w_100{
-        .container_1{
+        .hero_cont{
+            height: 500px;
+            background-image: url(/assets/img/index/sect_1/sect_1_hero_img.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 44%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 60px;
+
+            @media only screen and (max-width: 768px) {
+                height: 432px;
+            }
+
+            @media only screen and (max-width: 425px) {
+                height: 180px;
+            }
             img{
-                width: 100%;
-                margin-bottom: 60px;
+                width: 120px;
+                height: 120px;
+
+                @media only screen and (max-width: 768px) {
+                    width: 50px;
+                    height: 50px;
+                }
             }
         }
     }
