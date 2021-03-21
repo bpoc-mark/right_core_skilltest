@@ -1541,3 +1541,161 @@ footer{
 // ---------------------------------------
 // BOXING CSS STYLE
 // ---------------------------------------
+
+// ---------------------------------------
+// CONCEPT CSS STYLE
+// ---------------------------------------
+.jumbo_sect{
+    .w_100{
+        .concept_jumbo{
+            background-image: url(/assets/img/concept/concept_bg.png);
+            background-position: 0 30%;
+
+            .jumbo_txt_head{
+                color: $color2;
+                font-family: 'hirakakupro_w6';
+                font-size: 30px;
+                text-shadow: 0px 5px 3px rgba(206,89,55,0.2);
+            }
+        }
+    }
+}
+
+.b_sect_3{
+    .w_100{
+        .concept_cont{
+            margin-bottom: 100px;
+            .training_flow_cont{
+                .training_item_cont{
+                    .concept_hghlight_btm{
+                        margin-bottom: 10px;
+                        span{
+                            text-align: center;
+                            font-family: 'hirakakupro_w6';
+                            font-size: 24px;
+                            line-height: 41px;
+                            background: linear-gradient(rgba(0, 0, 0, 0) 65%, #ffe28a 25%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.c_sect_4{
+    background-color: #fff3f3;
+    padding: 40px 0;
+    .w_100{
+        .container_2{
+            .concept_sect_head{
+                font-family: 'hirakakupro_w6';
+                font-size: 24px;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .concept_course_cont{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                .row{
+                    width: 32.5%;
+                    position: relative;
+
+                    @media only screen and (max-width: 768px) {
+                        width: 48.5%;
+                        margin-bottom: 20px;
+
+                        &:last-child{
+                            margin: 0 auto;
+                        }
+                    }
+
+                    @media only screen and (max-width: 500px) {
+                        width: 100%;
+                    }
+
+                    .concept_img{
+                        position: relative;
+                        z-index: 1;
+                        width: 100%;
+                        height: 250px;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            position: relative;
+                            z-index: 1;
+                            object-fit: cover;
+                            // transform: scale(1.6);
+                        }
+                        .overlay{
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgba(0, 0, 0, 0.4);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: 2;
+                        }
+                    }
+                    .concept_details{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 2;
+                        width: 100%;
+                        height: 100%;
+                        padding: 15px;
+
+                        .concept_details_cont{
+                            border: 2px solid #FFFFFF;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            justify-content: center;
+
+                            p{
+                                font-family: 'hirakakupro_w6';
+                                font-size: 24px;
+                                line-height: 27px;
+                                color: $color2;
+                                margin-bottom: 5px;
+                            }
+                            a{
+                                font-family: 'hirakakupro_w3';
+                                font-size: 14px;
+                                color: $color2;
+                                border-bottom: 1px solid $color2;
+                                i{
+                                    font-size: 14px;
+                                    color: $color2;
+                                    padding-left: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contact_section{
+    .w_100{
+        .concept_mg_top{
+            margin-top: 0;
+        }
+    }
+}
+// ---------------------------------------
+// CONCEPT CSS STYLE
+// ---------------------------------------

@@ -1600,4 +1600,146 @@ footer .copyright_cont .footer_copyright span {
   font-size: 16px;
   line-height: 27px;
 }
+
+.jumbo_sect .w_100 .concept_jumbo {
+  background-image: url(/assets/img/concept/concept_bg.png);
+  background-position: 0 30%;
+}
+
+.jumbo_sect .w_100 .concept_jumbo .jumbo_txt_head {
+  color: #FFFFFF;
+  font-family: 'hirakakupro_w6';
+  font-size: 30px;
+  text-shadow: 0px 5px 3px rgba(206, 89, 55, 0.2);
+}
+
+.b_sect_3 .w_100 .concept_cont {
+  margin-bottom: 100px;
+}
+
+.b_sect_3 .w_100 .concept_cont .training_flow_cont .training_item_cont .concept_hghlight_btm {
+  margin-bottom: 10px;
+}
+
+.b_sect_3 .w_100 .concept_cont .training_flow_cont .training_item_cont .concept_hghlight_btm span {
+  text-align: center;
+  font-family: 'hirakakupro_w6';
+  font-size: 24px;
+  line-height: 41px;
+  background: linear-gradient(rgba(0, 0, 0, 0) 65%, #ffe28a 25%);
+}
+
+.c_sect_4 {
+  background-color: #fff3f3;
+  padding: 40px 0;
+}
+
+.c_sect_4 .w_100 .container_2 .concept_sect_head {
+  font-family: 'hirakakupro_w6';
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.c_sect_4 .w_100 .container_2 .concept_course_cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.c_sect_4 .w_100 .container_2 .concept_course_cont .row {
+  width: 32.5%;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .c_sect_4 .w_100 .container_2 .concept_course_cont .row {
+    width: 48.5%;
+    margin-bottom: 20px;
+  }
+  .c_sect_4 .w_100 .container_2 .concept_course_cont .row:last-child {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .c_sect_4 .w_100 .container_2 .concept_course_cont .row {
+    width: 100%;
+  }
+}
+
+.c_sect_4 .w_100 .container_2 .concept_course_cont .row .concept_img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.c_sect_4 .w_100 .container_2 .concept_course_cont .row .concept_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.c_sect_4 .w_100 .container_2 .concept_course_cont .row .concept_img .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.c_sect_4 .w_100 .container_2 .concept_course_cont .row .concept_details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+.c_sect_4 .w_100 .container_2 .concept_course_cont .row .concept_details .concept_details_cont {
+  border: 2px solid #FFFFFF;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.c_sect_4 .w_100 .container_2 .concept_course_cont .row .concept_details .concept_details_cont p {
+  font-family: 'hirakakupro_w6';
+  font-size: 24px;
+  line-height: 27px;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+
+.c_sect_4 .w_100 .container_2 .concept_course_cont .row .concept_details .concept_details_cont a {
+  font-family: 'hirakakupro_w3';
+  font-size: 14px;
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.c_sect_4 .w_100 .container_2 .concept_course_cont .row .concept_details .concept_details_cont a i {
+  font-size: 14px;
+  color: #FFFFFF;
+  padding-left: 5px;
+}
+
+.contact_section .w_100 .concept_mg_top {
+  margin-top: 0;
+}
 /*# sourceMappingURL=style.css.map */
