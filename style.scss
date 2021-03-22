@@ -1854,7 +1854,7 @@ footer{
             width: 960px;
             margin: 0 auto;
             position: relative;
-            margin: 100px auto 100px auto;
+            margin: 100px auto 0 auto;
 
             @media only screen and (max-width: 960px) {
                 width: 100%;
@@ -2019,4 +2019,81 @@ footer{
 }
 // ---------------------------------------
 // INFORMATION CSS STYLE
+// ---------------------------------------
+
+// ---------------------------------------
+// INFORMATION LIST CSS STYLE
+// ---------------------------------------
+.i_sect_2{
+    .w_100{
+        .container_2{
+            .info_list_cont{
+                margin-bottom: 30px;
+                .p_row{
+                    a{
+                        .w_100{
+                            .row{
+                                .info_list_meta_cont{
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    align-items: baseline;
+                                    justify-content: space-between;
+                                    
+                                    span{
+                                        &:first-child{
+                                            font-family: 'hirakakupro_w3';
+                                            font-size: 14px;
+                                            margin-bottom: 17px;
+                                            text-align: left;
+                                            color: #191919;
+                                        }
+                                        &:last-child{
+                                            font-family: 'hirakakupro_w3';
+                                            font-size: 16px;
+                                            background-color: #cc0033;
+                                            color: #FFFFFF;
+                                            padding: 2px 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }   
+            }
+            .info_list_nav{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: baseline;
+                justify-content: center;
+                .info_list_nav_link{
+                    display: block;
+                    border: 1px solid #cc0033;
+                    margin: 0 5px;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    font-family: 'hirakakupro_w6';
+                    font-size: 16px;
+                    color: #cc0033;
+
+                    &__active{
+                        background-color: #cc0033;
+                        color: $color2;
+
+                        i{
+                            background-color: #cc0033;
+                            color: $color2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// ---------------------------------------
+// INFORMATION LIST CSS STYLE
 // ---------------------------------------
