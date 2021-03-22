@@ -2097,3 +2097,91 @@ footer{
 // ---------------------------------------
 // INFORMATION LIST CSS STYLE
 // ---------------------------------------
+
+// ---------------------------------------
+// CONTACT CSS STYLE
+// ---------------------------------------
+.contact_jumbo_sect{
+    margin-bottom: 60px;
+    .w_100{
+        .contact_jumbo{
+            background-image: url(/assets/img/contact/jumbo_img.png);
+            background-position: 0 76%;
+
+            .jumbo_txt_head{
+                color: $color2;
+                font-family: 'hirakakupro_w6';
+                font-size: 30px;
+                text-shadow: 0px 5px 3px rgba(206,89,55,0.2);
+            }
+        }
+    }
+}
+
+.contct_sect{
+    .w_100{
+        .container_2{
+            .contct_thank_cont{
+                width: 1080px;
+                margin: 0 auto;
+                background-color: #eeeeee;
+                padding: 60px;
+
+                @media only screen and (max-width: 1081px) {
+                    width: 100%;
+                }
+
+                @media only screen and (max-width: 500px) {
+                    padding: 60px 20px;
+                }
+
+                .contct_thank_head{
+                    font-family: 'hirakakupro_w6';
+                    font-size: 24px;    
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+                .contct_thank_details{
+                    font-family: 'hirakakupro_w3';
+                    font-size: 16px;    
+                    text-align: center;
+                    line-height: 27px;
+                    margin-bottom: 60px;
+                }
+
+                .contct_thnk_cont{
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    .contct_thnk_btn{
+                        background-color: $color2;
+                        width: 300px;
+                        height: 56px;
+                        line-height: 56px;
+
+                        &:hover{
+                            background-color: #cc0033;
+                            color: $color2;
+                            transition: all 450ms;
+                            i{
+                                background-color: #cc0033;
+                                color: $color2;
+                                transition: all 450ms;
+                            }
+                        }
+
+                        i{
+                            position: absolute;
+                            top: 50%;
+                            left: 20px;
+                            right: unset;
+                            transform: translate(0, -50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// ---------------------------------------
+// CONTACT CSS STYLE
+// ---------------------------------------
