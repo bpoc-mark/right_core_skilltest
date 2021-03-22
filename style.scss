@@ -1828,3 +1828,195 @@ footer{
 // ---------------------------------------
 // PRIVATE CSS STYLE
 // ---------------------------------------
+
+// ---------------------------------------
+// INFORMATION CSS STYLE
+// ---------------------------------------
+.jumbo_sect{
+    .w_100{
+        .information_jumbo{
+            background-image: url(/assets/img/information/jumbo_img.png);
+            background-position: 0 39%;
+
+            .jumbo_txt_head{
+                color: $color2;
+                font-family: 'hirakakupro_w6';
+                font-size: 30px;
+                text-shadow: 0px 5px 3px rgba(206,89,55,0.2);
+            }
+        }
+    }
+}
+
+.info_sect_1{
+    .w_100{
+        .info_post_cont{
+            width: 960px;
+            margin: 0 auto;
+            position: relative;
+            margin: 100px auto 100px auto;
+
+            @media only screen and (max-width: 960px) {
+                width: 100%;
+                padding: 0 15px;
+            }
+
+            .post_img_cont{
+                width: 100%;
+                margin-bottom: 20px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            .post_head{
+                font-family: 'hirakakupro_w6';
+                font-size: 24px;
+                line-height: 48px;
+                margin-bottom: 10px;
+            }
+
+            .post_meta_cont{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                margin-bottom: 20px;
+                .post_date{
+                    font-family: 'hirakakupro_w3';
+                    font-size: 14px;
+                    color: #888888;
+                    margin-right: 10px;
+                }
+
+                .post_category{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: flex-start;
+                    span{
+                        font-family: 'hirakakupro_w3';
+                        font-size: 16px;
+                        background-color: #cc0033;
+                        color: #FFFFFF;
+                        padding: 5px 12px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .post_details{
+                font-family: 'hirakakupro_w3';
+                font-size: 16px;
+                line-height: 27px;
+                margin-bottom: 60px;
+            }
+            .post_nav_cont{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                border-top: 1px solid #cccccc;
+                padding-top: 40px;
+
+                a{
+                    &:hover{
+                        background-color: #cc0033;
+                        color: $color2;
+                        transition: all 450ms;
+                        i{
+                            background-color: #cc0033;
+                            color: $color2;
+                            transition: all 450ms;
+                        }
+                    }
+                }
+                
+                .post_nav_prev{
+                    display: block;
+                    position: relative;
+                    width: 240px;
+                    height: 44px;
+                    line-height: 44px;
+                    border: 1px solid #cccccc;
+                    text-align: center;
+                    font-family: 'hirakakupro_w3';
+                    font-size: 16px;
+                    i{
+                        font-size: 16px;
+                        color: $color1;
+                        position: absolute;
+                        top: 50%;
+                        left: 20px;
+                        transform: translate(0, -50%);
+                    }
+
+                    @media only screen and (max-width: 751px) {
+                        order: 1;
+                    }
+
+                    @media only screen and (max-width: 520px) {
+                        order: 1;
+                        width: 100%;
+                    }
+                }
+                .post_nav_return{
+                    display: block;
+                    position: relative;
+                    width: 240px;
+                    height: 44px;
+                    line-height: 44px;
+                    border: 1px solid #cc0033;
+                    text-align: center;
+                    font-family: 'hirakakupro_w6';
+                    font-size: 16px;
+                    color: #cc0033;
+
+                    @media only screen and (max-width: 751px) {
+                        order: 3;
+                        margin: 20px auto 20px auto;
+                    }
+
+                    @media only screen and (max-width: 520px) {
+                        order: 1;
+                        width: 100%;
+                    }
+                }
+                .post_nav_next{
+                    display: block;
+                    position: relative;
+                    width: 240px;
+                    height: 44px;
+                    line-height: 44px;
+                    border: 1px solid #cccccc;
+                    text-align: center;
+                    font-family: 'hirakakupro_w3';
+                    font-size: 16px;
+                    i{
+                        font-size: 16px;
+                        color: $color1;
+                        position: absolute;
+                        top: 50%;
+                        right: 20px;
+                        transform: translate(0, -50%);
+                    }
+
+                    @media only screen and (max-width: 751px) {
+                        order: 2;
+                    }
+
+                    @media only screen and (max-width: 520px) {
+                        order: 3;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+// ---------------------------------------
+// INFORMATION CSS STYLE
+// ---------------------------------------
