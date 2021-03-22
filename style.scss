@@ -1784,3 +1784,47 @@ footer{
 // ---------------------------------------
 // EXCERCISE CSS STYLE
 // ---------------------------------------
+
+// ---------------------------------------
+// PRIVATE CSS STYLE
+// ---------------------------------------
+.jumbo_sect{
+    .w_100{
+        .private_jumbo{
+            background-image: url(/assets/img/private/jumbo_img.png);
+            background-position: 0 50%;
+
+            .jumbo_txt_head{
+                color: $color2;
+                font-family: 'hirakakupro_w6';
+                font-size: 30px;
+                text-shadow: 0px 5px 3px rgba(206,89,55,0.2);
+            }
+        }
+    }
+}
+
+.b_sect_2{
+    .w_100{
+        .container_2{
+            .private_strenght_cont{
+                .row{
+                    &:last-child{
+                        .private_strenght_details{
+                            padding: 30px 23px;
+
+                            p{
+                                &:last-child{
+                                    padding: 0 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// ---------------------------------------
+// PRIVATE CSS STYLE
+// ---------------------------------------

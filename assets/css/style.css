@@ -1803,4 +1803,24 @@ footer .copyright_cont .footer_copyright span {
 .contact_section .w_100 .exercise_contact_cont {
   margin-top: 0;
 }
+
+.jumbo_sect .w_100 .private_jumbo {
+  background-image: url(/assets/img/private/jumbo_img.png);
+  background-position: 0 50%;
+}
+
+.jumbo_sect .w_100 .private_jumbo .jumbo_txt_head {
+  color: #FFFFFF;
+  font-family: 'hirakakupro_w6';
+  font-size: 30px;
+  text-shadow: 0px 5px 3px rgba(206, 89, 55, 0.2);
+}
+
+.b_sect_2 .w_100 .container_2 .private_strenght_cont .row:last-child .private_strenght_details {
+  padding: 30px 23px;
+}
+
+.b_sect_2 .w_100 .container_2 .private_strenght_cont .row:last-child .private_strenght_details p:last-child {
+  padding: 0 5px;
+}
 /*# sourceMappingURL=style.css.map */
