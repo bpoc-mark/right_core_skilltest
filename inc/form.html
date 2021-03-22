@@ -30,7 +30,7 @@
 </head>
 <body>
     
-    <header class="w_100">
+    <header class="w-100">
         <div class="container_1">
             <div class="w_100 header_flex">
                 <div class="row_1">
@@ -190,43 +190,178 @@
     </header>
 
     <main>
-        <section class="jumbo_sect w_100">
+        <section class="jumbo_sect contact_jumbo_sect w_100">
             <div class="w_100">
-                <div class="w_100 jumbo_cont information_jumbo">
-                    <h3 class="jumbo_txt_head">新着情報</h3>
+                <div class="w_100 jumbo_cont contact_jumbo">
+                    <h3 class="jumbo_txt_head">予約・お問い合わせ</h3>
                 </div>
             </div>
         </section>
-        <section class="info_sect_1 w_100">
+        <section class="contct_sect w_100">
             <div class="w_100">
-                <div class="info_post_cont">
-                    <div class="post_img_cont">
-                        <img src="assets/img/information/img_post.png" alt="">
+                <div class="container_2">
+                    <div class="contct_cont">
+                        <p class="contct_thank_head">お電話でのお問い合わせ</p>
+                        <p class="contct_thank_num"><i class="fas fa-phone"></i>052-532-0084</p>
                     </div>
-                    <h3 class="post_head">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</h3>
-                    <div class="post_meta_cont">
-                        <span class="post_date">2020.00.00</span>
-                        <div class="post_category">
-                            <span>カテゴリ</span>
-                            <span>カテゴリ</span>
+                    <div class="contct_cont contct_cont_form">
+                        <div class="contct_form_details">
+                            <p>メールでのお問い合わせ</p>
+                            <p>以下のお問い合わせフォームにご質問内容などをご記入の上、送信してください。<br> 後ほど、担当者より連絡させていただきます。</p>
                         </div>
-                    </div>
-                    <p class="post_details">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。<br>
-                        <br>
-                        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。<br>
-                        <br>
-                        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
-                    <div class="post_nav_cont">
-                        <a href="" class="post_nav_prev"><i class="fas fa-chevron-left"></i>前の記事へ</a>
-                        <a href="" class="post_nav_return">一覧に戻る</a>
-                        <a href="" class="post_nav_next">次の記事へ<i class="fas fa-chevron-right"></i></a>
+                        <form action="">
+                            <div class="w_100 form_cont">
+                                <div class="row_1">
+                                    <div class="w_100 form_lbl_cont">
+                                        <label for="">お名前</label>
+                                        <span>必須</span>
+                                    </div>
+                                </div>
+                                <div class="row_2">
+                                    <div class="w_100">
+                                        <input type="text" id="txt_name" name="txt_name" class="form_input form_input_50 form_border_error" placeholder="例) 山田太郎">
+                                        <p class="form_error">入力してください。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w_100 form_cont">
+                                <div class="row_1">
+                                    <div class="w_100 form_lbl_cont">
+                                        <label for="">フリガナ</label>
+                                        <span>必須</span>
+                                    </div>
+                                </div>
+                                <div class="row_2">
+                                    <div class="w_100">
+                                        <input type="text" id="txt_frigana" name="txt_frigana" class="form_input form_input_50" placeholder="例) ヤマダタロウ">
+                                        <p class="form_error">入力してください。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w_100 form_cont">
+                                <div class="row_1">
+                                    <div class="w_100 form_lbl_cont">
+                                        <label for="">電話番号</label>
+                                        <!-- <span>必須</span> -->
+                                    </div>
+                                </div>
+                                <div class="row_2">
+                                    <div class="w_100">
+                                        <input type="tel" id="txt_tel" name="txt_tel" class="form_input w_100" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w_100 form_cont">
+                                <div class="row_1">
+                                    <div class="w_100 form_lbl_cont">
+                                        <label for="">メールアドレス</label>
+                                        <span>必須</span>
+                                    </div>
+                                </div>
+                                <div class="row_2">
+                                    <div class="w_100">
+                                        <input type="email" id="txt_email" name="txt_email" class="form_input w_100" placeholder="例) sample@co.jp">
+                                        <p class="form_error">入力してください。</p>
+                                    </div>
+                                </div>
+                                <div class="row_1">
+                                    <div class="w_100 form_lbl_cont form_email_mg_top">
+                                        <label for=""></label>
+                                        <span>必須</span>
+                                    </div>
+                                </div>
+                                <div class="row_2">
+                                    <div class="w_100">
+                                        <p class="email_txt_verification"><i class="fas fa-arrow-circle-down"></i>確認のためもう一度ご入力ください。</p>
+                                        <input type="email" id="txt_verifyemail" name="txt_verifyemail" class="form_input w_100" placeholder="例) sample@co.jp">
+                                        <p class="form_error">入力してください。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w_100 form_cont form_radio_check">
+                                <div class="row_1">
+                                    <div class="w_100 form_lbl_cont">
+                                        <label for="">ご希望の返信先</label>
+                                        <span>必須</span>
+                                    </div>
+                                </div>
+                                <div class="row_2">
+                                    <div class="w_100">
+                                        <div class="form_radio_cont">
+                                            <label for="">
+                                                <input type="radio" id="" name="txt_desiredreply" value="1" class="form_input_radio">
+                                                お電話
+                                            </label>
+                                            <label for="">
+                                                <input type="radio" id="" name="txt_desiredreply" value="2" class="form_input_radio">
+                                                メール
+                                            </label>
+                                        </div>
+                                        <p class="form_error">選択してください。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w_100 form_cont">
+                                <div class="row_1">
+                                    <div class="w_100 form_lbl_cont">
+                                        <label for="">お問い合わせ項目</label>
+                                        <span>必須</span>
+                                    </div>
+                                </div>
+                                <div class="row_2">
+                                    <div class="w_100">
+                                        <select name="txt_inquiryitems" id="txt_inquiryitems" class="form_input form_input_50">
+                                            <option value="">選択してください</option>
+                                        </select>
+                                        <p class="form_error">選択してください。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w_100 form_cont">
+                                <div class="row_1">
+                                    <div class="w_100 form_lbl_cont">
+                                        <label for="">お問い合わせ項目</label>
+                                        <span>必須</span>
+                                    </div>
+                                </div>
+                                <div class="row_2">
+                                    <div class="w_100">
+                                        <textarea name="txt_message" id="txt_message" rows="10" class="form_input w_100" placeholder="こちらにお問い合わせ内容をご記入ください。"></textarea>
+                                        <p class="form_error">入力してください。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w_100 form_cont form_radio_check">
+                                <div class="row_1">
+                                    <div class="w_100 form_lbl_cont">
+                                        <label for="">ご希望の返信先</label>
+                                        <span>必須</span>
+                                    </div>
+                                </div>
+                                <div class="row_2">
+                                    <div class="w_100">
+                                        <div class="form_radio_cont form_checkbox_cont">
+                                            <label for="">
+                                                <input type="checkbox" id="txt_agreement" name="txt_agreement" value="1" class="form_input_radio">
+                                               <a href="">個人情報保護方針 <i class="fas fa-clone"></i></a> に同意します。
+                                            </label>
+                                        </div>
+                                        <p class="form_error">チェックしてください。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_submit_cont">
+                                <input type="submit" class="btn_submit" value="入力内容を確認する">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
         <section class="contact_section w_100">
             <div class="w_100">
-                <div class="contact_sect_cont">
+                <div class="contact_sect_cont form_contct_mg_tp">
                     <div class="row">
                         <a href="" class="cont_inquiry">
                             予約・お問い合わせ
@@ -375,6 +510,17 @@
             })
         })
     </script>
+
+    <script>
+        (function(d) {
+        var config = {
+            kitId: 'hjx8yza',
+            scriptTimeout: 3000,
+            async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+  </script>
 
 </body>
 </html>
