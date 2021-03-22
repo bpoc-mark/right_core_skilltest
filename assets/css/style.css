@@ -1410,7 +1410,7 @@ footer .copyright_cont .footer_copyright span {
 @media only screen and (max-width: 900px) {
   .b_sect_1 .w_100 .container_2 .box_strong_cont .box_strong_1 {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 }
 
@@ -1422,12 +1422,12 @@ footer .copyright_cont .footer_copyright span {
 
 .b_sect_1 .w_100 .container_2 .box_strong_cont .box_strong_2 {
   width: 600px;
-  height: 337px;
   background-color: #FFFFFF;
   padding: 60px 40px;
   position: absolute;
-  top: 72px;
+  top: 50%;
   right: 0;
+  transform: translate(0, -50%);
 }
 
 @media only screen and (max-width: 900px) {
@@ -1437,6 +1437,7 @@ footer .copyright_cont .footer_copyright span {
     height: auto;
     position: relative;
     top: 0;
+    transform: translate(0, 0);
   }
 }
 
@@ -1740,6 +1741,66 @@ footer .copyright_cont .footer_copyright span {
 }
 
 .contact_section .w_100 .concept_mg_top {
+  margin-top: 0;
+}
+
+.jumbo_sect .w_100 .exercise_jumbo {
+  background-image: url(/assets/img/excercise/jumbo_bg.png);
+  background-position: 0 63%;
+}
+
+.jumbo_sect .w_100 .exercise_jumbo .jumbo_txt_head {
+  color: #FFFFFF;
+  font-family: 'hirakakupro_w6';
+  font-size: 30px;
+  text-shadow: 0px 5px 3px rgba(206, 89, 55, 0.2);
+}
+
+.b_sect_2 .w_100 .container_2 .exercise_strenght_cont .row {
+  width: 32.5%;
+}
+
+@media only screen and (max-width: 900px) {
+  .b_sect_2 .w_100 .container_2 .exercise_strenght_cont .row {
+    width: 48.5%;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .b_sect_2 .w_100 .container_2 .exercise_strenght_cont .row {
+    width: 100%;
+  }
+}
+
+.b_sect_2 .w_100 .container_2 .exercise_strenght_cont .row .exercise_strenght_details {
+  width: 80%;
+  margin-top: -100px;
+}
+
+.e_sect_4 {
+  background-color: #fff3f3;
+  padding: 40px 0;
+}
+
+.e_sect_4 .w_100 .container_2 .exercise_btn_cont {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.e_sect_4 .w_100 .container_2 .exercise_btn_cont .exercise_btn {
+  background-color: #FFFFFF;
+  width: 600px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.e_sect_4 .w_100 .container_2 .exercise_btn_cont .exercise_btn:hover {
+  background-color: #cc0033;
+  color: #FFFFFF;
+}
+
+.contact_section .w_100 .exercise_contact_cont {
   margin-top: 0;
 }
 /*# sourceMappingURL=style.css.map */
