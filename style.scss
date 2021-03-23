@@ -54,19 +54,10 @@ header{
             justify-content: space-around;
             // border-bottom: 1px solid;
             .row_1{
-                width: 69%;
-                
-                @media only screen and (max-width: 1400px) {
-                    width: 60%;
-                }
+                width: 50%;
 
-                @media only screen and (max-width: 1050px) {
-                    width: 55%;
-                }
-
-                @media only screen and (max-width: 900px) {
+                @media only screen and (max-width: 1000px) {
                     width: 80%;
-                    
                 }
 
                 p{
@@ -86,63 +77,45 @@ header{
                 }
             }
             .row_2{
-                width: 31%;
-
-                @media only screen and (max-width: 1400px) {
-                    width: 40%;
-                }
-
-                @media only screen and (max-width: 1050px) {
-                    width: 45%;
-                }
-
-                @media only screen and (max-width: 900px) {
+                width: 50%;
+                @media only screen and (max-width: 1000px) {
                     width: 0;
                     display: none;
                 }
-                
                 .head_contct_flex{
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
                     align-items: center;
-                    justify-content: space-around;
+                    justify-content: flex-end;
 
-                    .row{
-                        width: 50%;
+                    .head_btn_reservation{
+                        width: 250px;
+                        display: block;
+                        text-decoration: none;
+                        text-align: center;
+                        background: #e8ba00;
+                        height: 70px;
+                        line-height: 70px;
+                        align-items: center;
+                        color: $color2;
+                        font-family: 'hirakakupro_w6';
+                        font-size: 16px;
+                    }
+                    .head_btn_download{
+                        width: 250px;
+                        display: block;
+                        text-decoration: none;
+                        text-align: center;
+                        background-color: #cc0033;
+                        height: 70px;
+                        line-height: 70px;
+                        color: $color2;
+                        font-family: 'hirakakupro_w6';
+                        font-size: 16px;
 
-                        &:first-child{
-                            a{
-                                width: 100%;
-                                display: block;
-                                text-decoration: none;
-                                text-align: center;
-                                background: #e8ba00;
-                                height: 70px;
-                                line-height: 70px;
-                                align-items: center;
-                                color: $color2;
-                                font-family: 'hirakakupro_w6';
-                                font-size: 16px;
-                            }
-                        }
-                        &:last-child{
-                            a{
-                                width: 100%;
-                                display: block;
-                                text-decoration: none;
-                                text-align: center;
-                                background-color: #cc0033;
-                                height: 70px;
-                                line-height: 70px;
-                                color: $color2;
-                                font-family: 'hirakakupro_w6';
-                                font-size: 16px;
-
-                                i{
-                                    color: $color2;
-                                }
-                            }
+                        i{
+                            color: $color2;
                         }
                     }
                 }
@@ -150,239 +123,247 @@ header{
             .row_3{
                 width: 100%;
 
-                @media only screen and (max-width: 900px) {
+                @media only screen and (max-width: 1000px) {
                     width: 20%;
-                    text-align: right;
-                    padding: 0 20px 0 0;
                 }
 
-                .nav_menu_sp{
-                    display: none;
-                    font-size: 20px;
-                    width: 40px;
-                    background-color: transparent;
-                    border: 2px solid $color1;
-                    border-radius: 5px;
-
-                    &:hover{
-                        background-color: #cc0033;
-                        border: 2px solid #cc0033;
-                        i{
-                            color: $color2;
-                        }
-                    }
-
-                    i{
-                        color: $color1;
-                    }
-
-                    @media only screen and (max-width: 900px) {
-                        display: inline-block;
-                    }
-                }
-
-                .navbar{
-                    padding: 0 60px 0 60px;
-                    // border-top: 1px solid #eeeeee;
-                    // border-bottom: 1px solid #eeeeee;
-                    .navbar_nav{
+                .head_nav{
+                    @media only screen and (max-width: 1000px) {
                         display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        align-items: center;
-                        justify-content: space-around;
-                        list-style: none;
-
-                        @media only screen and (max-width: 900px) {
-                            // flex-direction: column;
+                        justify-content: flex-end;
+                        // padding: 20px 5px 20px 20px;
+                        height: 60px;
+                    }
+                    .nav_menu_sp{
+                        display: none;
+                        font-size: 20px;
+                        width: 40px;
+                        background-color: transparent;
+                        border: none;
+                        border-radius: 5px;
+                        outline: none;
+                        @media only screen and (max-width: 1000px) {
+                            display: inline-block;
+                        }
+                    }
+    
+                    .navbar{
+                        padding: 0 60px 0 60px;
+                        // border-top: 1px solid #eeeeee;
+                        // border-bottom: 1px solid #eeeeee;
+                        @media only screen and (max-width: 1000px) {
                             display: none;
-                            position: absolute;
-                            z-index: 500;
-                            left: 0;
-                            top: 70px;
-                            background-color: #cc0033;
-                            width: 100%;
-                            text-align: left;
-                        }
 
-                        &__openmenu{
-                            display: block;
-                        }
-
-                        .nav_item{
-                            position: relative;
-
-                            &:hover {
-                                .navbar_item_drop_down{
-                                    display: block;
-                                }
-                                .nav_link{
-                                    color: #cc0033;
-                                    background-color: $color2;
-                                }
-                            }
-
-                            &:nth-child(9){
-                                .navbar_item_drop_down{
-                                    left: 2px;
-
-                                    @media only screen and (max-width: 900px) {
-                                        left: 0;
-                                    }
-                                }
-                            }
-
-                            @media only screen and (max-width: 1200px) {
-                                &:nth-child(n+5){
-                                    display: none;
-                                }
-                            }
-
-                            @media only screen and (max-width: 900px) {
-                                &:nth-child(n+5){
-                                    display: block;
-                                }
-                            }
-                            
-
-                            .nav_link{
+                            &__open-navbar{
                                 display: block;
-                                text-decoration: none;
-                                font-family: 'hirakakupro_w3';
-                                font-size: 14px;
-                                height: 60px;
-                                line-height: 60px;
-
-                                @media only screen and (max-width: 900px) {
-                                    padding: 0;
-                                    height: auto;
-                                    line-height: 100%;
-                                    padding: 15px 0 15px 15px;
-                                    color: $color2;
-
-                                    &:hover{
-                                        background: $color2;
-                                    }
+                                position: absolute;
+                                top: 60px;
+                                left: 0;
+                                width: 100%;
+                                z-index: 999;
+                            }
+                        }
+                        .navbar_nav{
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            justify-content: space-around;
+                            list-style: none;
+    
+                            @media only screen and (max-width: 1000px) {
+                                // flex-direction: column;
+                                display: none;
+                                position: absolute;
+                                z-index: 500;
+                                left: 0;
+                                background-color: #cc0033;
+                                width: 100%;
+                                text-align: left;
+                            }
+    
+                            &__openmenu{
+                                @media only screen and (max-width: 1000px) {
+                                    display: block;
                                 }
                             }
-                            
-                            .navbar_item_drop_down{
-                                display: none;
-                                background-color: #cc0033;
-                                list-style: none;
-                                min-width: 120px;
-                                position: absolute;
-                                z-index: 200;
-                                left: -35px;
-                                margin-top: -10px;
-                                padding: 10px 0;
-
-                                @media only screen and (max-width: 900px) {
-                                    position: relative;
-                                    z-index: 0;
-                                    width: 100%;
-                                    left: 0;
-                                    margin-top: 0;
-                                    padding: 0;
-                                }
-
-                                .navbar_drop_down_item{
-                                    text-align: center;
-
-                                    @media only screen and (max-width: 900px) {
-                                        text-align: left;
-                                    }
-                                    
-                                    .navbar_drop_down_link{
+    
+                            .nav_item{
+                                position: relative;
+    
+                                &:hover {
+                                    .navbar_item_drop_down{
                                         display: block;
-                                        text-decoration: none;
-                                        color: $color2;
-                                        font-size: 14px;
-                                        font-family: 'hirakakupro_w3';
-                                        padding: 6px 0;
-
-                                        @media only screen and (max-width: 900px) {
-                                            padding: 6px 0 6px 40px;
-                                        }
-
-                                        &:hover{
-                                            background-color: #FFFFFF;
-                                            transition: all 450ms;
-                                            color: $color1;
+                                    }
+                                    .nav_link{
+                                        color: #cc0033;
+                                        background-color: $color2;
+                                    }
+                                }
+    
+                                &:nth-child(9){
+                                    .navbar_item_drop_down{
+                                        left: 2px;
+    
+                                        @media only screen and (max-width: 1000px) {
+                                            left: 0;
                                         }
                                     }
                                 }
-                            }
-                        }
-
-                        .drop_d{
-                            display: none;
-                            position: relative;
-                            
-                            @media only screen and (max-width: 1200px) {
-                                display: block;
-                            }
-
-                            .drop_d_btn{
-                                background-color: transparent;
-                                border: 0;
-                                outline: transparent;
-                                font-size: 18px;
-                                cursor: pointer;
-
-                                @media only screen and (max-width: 900px) {
-                                    display: none;
+    
+                                @media only screen and (max-width: 1200px) {
+                                    &:nth-child(n+5){
+                                        display: none;
+                                    }
                                 }
-                            }
-
-                            .d_n_tabpc{
-                                display: none;
-                                position: absolute;
-                                min-width: 200px;
-                                right: 0;
-                                margin-top: 10px;
-                                background-color: #cc0033;
+    
+                                @media only screen and (max-width: 1000px) {
+                                    &:nth-child(n+5){
+                                        display: block;
+                                    }
+                                }
                                 
-                                &__open_drp{
+    
+                                .nav_link{
                                     display: block;
+                                    text-decoration: none;
+                                    font-family: 'hirakakupro_w3';
+                                    font-size: 14px;
+                                    height: 60px;
+                                    line-height: 60px;
+    
+                                    @media only screen and (max-width: 1000px) {
+                                        padding: 0;
+                                        height: auto;
+                                        line-height: 100%;
+                                        padding: 15px 0 15px 15px;
+                                        color: $color2;
+    
+                                        &:hover{
+                                            background: $color2;
+                                        }
+                                    }
                                 }
-
-                                .navbar_nav{
-                                    flex-direction: column;
+                                
+                                .navbar_item_drop_down{
+                                    display: none;
+                                    background-color: #cc0033;
+                                    list-style: none;
+                                    min-width: 120px;
+                                    position: absolute;
+                                    z-index: 200;
+                                    left: -35px;
+                                    margin-top: -10px;
                                     padding: 10px 0;
-                                    .nav_item{
+    
+                                    @media only screen and (max-width: 1000px) {
                                         position: relative;
+                                        z-index: 0;
                                         width: 100%;
+                                        left: 0;
+                                        margin-top: 0;
+                                        padding: 0;
+                                    }
+    
+                                    .navbar_drop_down_item{
                                         text-align: center;
-                                        .nav_link{
+    
+                                        @media only screen and (max-width: 1000px) {
+                                            text-align: left;
+                                        }
+                                        
+                                        .navbar_drop_down_link{
                                             display: block;
-                                            width: 100%;
-                                            height: auto;
-                                            line-height: 100%;
-                                            padding: 15px 0;
+                                            text-decoration: none;
                                             color: $color2;
-
+                                            font-size: 14px;
+                                            font-family: 'hirakakupro_w3';
+                                            padding: 6px 0;
+    
+                                            @media only screen and (max-width: 1000px) {
+                                                padding: 6px 0 6px 40px;
+                                            }
+    
                                             &:hover{
-                                                background-color: $color2;
+                                                background-color: #FFFFFF;
+                                                transition: all 450ms;
                                                 color: $color1;
                                             }
                                         }
-
-                                        @media only screen and (max-width: 1200px) {
-                                            &:nth-child(n+5){
+                                    }
+                                }
+                            }
+    
+                            .drop_d{
+                                display: none;
+                                position: relative;
+                                
+                                @media only screen and (max-width: 1200px) {
+                                    display: block;
+                                }
+    
+                                .drop_d_btn{
+                                    background-color: transparent;
+                                    border: 0;
+                                    outline: transparent;
+                                    font-size: 18px;
+                                    cursor: pointer;
+    
+                                    @media only screen and (max-width: 1000px) {
+                                        display: none;
+                                    }
+                                }
+    
+                                .d_n_tabpc{
+                                    display: none;
+                                    position: absolute;
+                                    min-width: 200px;
+                                    right: 0;
+                                    margin-top: 10px;
+                                    z-index: 999;
+                                    background-color: #cc0033;
+                                    
+                                    &__open_drp{
+                                        display: block;
+                                    }
+    
+                                    .navbar_nav{
+                                        flex-direction: column;
+                                        padding: 10px 0;
+                                        .nav_item{
+                                            position: relative;
+                                            width: 100%;
+                                            text-align: center;
+                                            .nav_link{
                                                 display: block;
+                                                width: 100%;
+                                                height: auto;
+                                                line-height: 100%;
+                                                padding: 15px 0;
+                                                color: $color2;
+    
+                                                &:hover{
+                                                    background-color: $color2;
+                                                    color: $color1;
+                                                }
                                             }
-                                        }
-
-                                        .navbar_item_drop_down{
-                                            left: -120px;
-                                            top: 10px;
+    
+                                            @media only screen and (max-width: 1200px) {
+                                                &:nth-child(n+5){
+                                                    display: block;
+                                                }
+                                            }
+    
+                                            .navbar_item_drop_down{
+                                                left: -120px;
+                                                top: 10px;
+                                            }
                                         }
                                     }
                                 }
                             }
+                            
                         }
-                        
                     }
                 }
             }
